@@ -17,42 +17,57 @@
 
       <div class="row">
         <div class="col-md-6">
-
-
+          <h2>Add a contact:</h2>
           <form id="contact-info">
             <div class="form-group">
-              <label class="col-form-label" for="contact-info">Enter your first name:</label>
+              <label class="col-form-label" for="first-name">Enter your first name:</label>
               <input type="text" class="form-control" id="first-name">
             </div>
 
             <div class="form-group">
-              <label class="col-form-label" for="contact-info">Enter your last name:</label>
+              <label class="col-form-label" for="last-name">Enter your last name:</label>
               <input type="text" class="form-control" id="last-name">
             </div>
 
             <div class="form-group">
-              <label for="contact-info">Enter your email address:</label>
+              <label class="col-form-label" for="email">Enter your email address:</label>
               <input type="email" class="form-control" id="email">
             </div>
 
-            <button type="submit" class="btn btn-info">Submit</button>
+            <div id="new-addresses">
+              <div class="new-address">
+                <div class="form-group">
+                  <label for="new-street">Street</label>
+                  <input type="text" class="form-control new-street">
+                </div>
+                <div class="form-group">
+                  <label for="new-city">City</label>
+                  <input type="text" class="form-control new-city">
+                </div>
+              </div><!--close new address class-->
+            </div><!--close new address ID-->
+            <span class="btn btn-primary" id="add-address">Another address</span>
+            <button type="submit" class="btn btn-info">Add</button>
           </form>
 
           <h2>Contacts:</h2>
           <ul id="contact-list">
 
           </ul>
-
         </div> <!--col-md-6-->
-      </div> <!--row-->
-      <div class="col-md-6">
-        <div id="show-contact">
-          <h2></h2>
-          <p>First name: <span class="first"></span></p>
-          <p>Last name: <span class="last"></span></p>
-          <p>E-mail: <span class="emailaddr"></span></p>
-        </div>
-      </div><!--col-md-6-->
+        <div class="col-md-6">
+          <div id="show-contact">
+            <h2></h2>
+            <p>First name: <span class="first"></span></p>
+            <p>Last name: <span class="last"></span></p>
+            <p>E-mail: <span class="emailaddr"></span></p>
+            <p>Addresses:</p>
+            <ul id="addresses">
+
+            </ul>
+          </div>
+        </div><!--col-md-6-->
+      </div>
 
     </div> <!--main container-->
 
