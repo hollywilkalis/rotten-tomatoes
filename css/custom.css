@@ -39,7 +39,8 @@ img {
   background-color: #e82b28;
   color: yellow;
   font-family: 'Merriweather Sans', sans-serif;
-  font-size: 20px;
+  font-size: 18px;
+  margin-top: 10px;
 }
 
 table {
