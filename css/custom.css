@@ -1,12 +1,65 @@
-#show-contact {
-  display: none;
+.header {
+  background-color: #e82b28;
+  width: auto;
+  padding: 15px;
+  margin-bottom: 20px;
 }
 
-.contact {
-  cursor: pointer;
-  color: #0088cc;
+.header:after {
+  content: "";
+  display: table;
+  clear: both;
 }
 
-.contact:hover {
-  text-decoration: underline;
+
+h1 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: yellow;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+h2 {
+  font-family: 'Merriweather Sans', sans-serif;
+  color: #e82b28;
+  font-weight: bold;
+  margin: 40px 0 20px 0;
+  font-size: 20px;
+}
+
+h3 {
+  color: lightyellow;
+}
+
+img {
+  float: right;
+}
+
+.btn {
+  background-color: #e82b28;
+  color: yellow;
+  font-family: 'Merriweather Sans', sans-serif;
+  font-size: 20px;
+}
+
+table {
+  border: 4px #e82b28 solid;
+  width: 75%;
+}
+
+th, td {
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+}
+
+thead {
+  background-color: #e82b28;
+  color: white;
+  font-weight: bold;
+  font-family: 'Merriweather Sans', sans-serif;
+}
+
+tr {
+  border-bottom: 2px #e82b28 solid;
 }

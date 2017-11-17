@@ -4,79 +4,48 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="css/custom.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans" rel="stylesheet">
     <script src="js/jquery-3.2.1.js"></script>
     <script src="js/scripts.js"></script>
     <title></title>
   </head>
   <body>
     <div class="container">
-      <div class="jumbotron">
-        <h1 class="display-4">Address Book</h1>
-        <p class="lead">Please enter your contact info below</p>
+      <div class="header">
+        <img src="img/rottentomatoes.png">
+        <h1>Movie Rating Tracker</h1>
+        <h3>Enter your movie information below to add it to the list</h3>
       </div>
 
-      <div class="row">
-        <div class="col-md-6">
-          <h2>Add a contact:</h2>
-          <form id="contact-info">
-            <div class="form-group">
-              <label class="col-form-label" for="first-name">Enter your first name:</label>
-              <input type="text" class="form-control" id="first-name">
-            </div>
+      <form id="contact-info">
+        <div class="form-group">
+          <label class="form-label" for="movie-title">Movie title:</label>
+          <input type="text" class="form-control" id="movie-title">
+        </div>
 
-            <div class="form-group">
-              <label class="col-form-label" for="last-name">Enter your last name:</label>
-              <input type="text" class="form-control" id="last-name">
-            </div>
+        <div class="form-group">
+          <label class="form-label" for="movie-year">Year made</label>
+          <input type="text" class="form-control" id="movie-year">
+        </div>
 
-            <div class="form-group">
-              <label class="col-form-label" for="email">Enter your email address:</label>
-              <input type="email" class="form-control" id="email">
-            </div>
+        <div class="form-group">
+          <label class="form-label" for="movie-score">Rotten Tomatoes score</label>
+          <input type="text" class="form-control" id="movie-score">
+        </div>
 
-            <div id="new-addresses">
-              <div class="new-address">
-                <div class="form-group">
-                  <label for="new-street">Street</label>
-                  <input type="text" class="form-control new-street">
-                </div>
-                <div class="form-group">
-                  <label for="new-city">City</label>
-                  <input type="text" class="form-control new-city">
-                </div>
-                <div class="form-group">
-                  <label for="new-state">State</label>
-                  <input type="text" class="form-control new-state">
-                </div>
-                <div class="form-group">
-                  <label for="new-address-type">Address type</label>
-                  <input type="text" class="form-control new-address-type">
-                </div>
-              </div><!--close new address class-->
-            </div><!--close new address ID-->
-            <span class="btn btn-primary" id="add-address">Another address</span>
-            <button type="submit" class="btn btn-info">Add</button>
-          </form>
+        <button type="submit" class="btn btn-lg">Add</button>
+      </form>
 
-          <h2>Contacts:</h2>
-          <ul id="contact-list">
-
-          </ul>
-        </div> <!--col-md-6-->
-        <div class="col-md-6">
-          <div id="show-contact">
-            <h2></h2>
-            <p>First name: <span class="first"></span></p>
-            <p>Last name: <span class="last"></span></p>
-            <p>E-mail: <span class="emailaddr"></span></p>
-            <p>Addresses:</p>
-            <ul id="addresses">
-
-            </ul>
-          </div>
-        </div><!--col-md-6-->
-      </div>
-
+      <h2>Your favorite movies: how did they rate?</h2>
+      <table id="movie-table" class="tablesorter">
+        <thead>
+          <th>Movie Title</th>
+          <th>Year Made</th>
+          <th>Rotten Tomatoes Score</th>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
     </div> <!--main container-->
 
   </body>
